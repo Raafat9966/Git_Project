@@ -4,34 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/imgInp.css">
+    <link rel="stylesheet" href="assets/imgInp.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="firstDiv">
-        <div class="div">
-            <img src="meeting.jpg" id="myImg" alt="Meeting Image" width="300" height="300">
-        </div>
+    <h3>HTML Form</h3>
 
-        <div class="div1">
-            <form action="" id="myForm">
-                <label for="textIn">Name:</label><br>
-                <input type="text" name="text" id="textIn" required><br>
+    <div class="shadow">
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" autocomplete="address-level3"><br>
-                <label for="passIn">Password:</label><br>
-                <input type="password" name="pass" id="passIn" required><br>
-                <label for="passInR">Repeat Password:</label><br>
-                <input type="password" name="pass" id="passInR" required><br>
-                <input id="fileInput" type="file" name="" id=""><br><br>
-                <input type="submit" value="Submit"><br>
-            </form>
-        </div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
 
+            <input type="submit" value="Submit">
+        </form>
     </div>
+
 
 </body>
 
